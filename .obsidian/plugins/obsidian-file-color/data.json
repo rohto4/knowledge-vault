@@ -1,0 +1,51 @@
+{
+  "cascadeColors": true,
+  "colorBackground": true,
+  "palette": [
+    {
+      "id": "kv1Usvo181JCYwUdsH6ft",
+      "name": "pastel-red",
+      "value": "#f7dfe7"
+    },
+    {
+      "id": "spxLohbQtpt7XRH2l_aik",
+      "name": "pastel-lavender",
+      "value": "#e6e0f5"
+    },
+    {
+      "id": "bZsa6lOUxzRLdWEO60k3F",
+      "name": "pastel-purple",
+      "value": "#d6deff"
+    },
+    {
+      "id": "30pJjkBgdbAHApyDJwhfa",
+      "name": "pastel-blue",
+      "value": "#d9edf2"
+    },
+    {
+      "id": "65lTG9OayLiLMqfyZp8nH",
+      "name": "pastel-green",
+      "value": "#e1f9e3"
+    },
+    {
+      "id": "D22aq5138eu_AKqkgltRd",
+      "name": "pastel-yellow",
+      "value": "#fffadb"
+    },
+    {
+      "id": "FbFa4IYVpgEtmCdlPWDl-",
+      "name": "pastel-orange",
+      "value": "#fff1e5"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "tech-stack.md",
+      "color": "kv1Usvo181JCYwUdsH6ft"
+    },
+    {
+      "path": "README.md",
+      "color": "65lTG9OayLiLMqfyZp8nH"
+    }
+  ]
+}
