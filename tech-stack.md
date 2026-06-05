@@ -85,3 +85,58 @@ PJ内で使う技術、plugin、docs、候補リンクはまずここに登録�
 - 個別noteには直接必要なURLだけ残す。
 - API key、private URL、credential は書かない。
 
+## Misskey / Codex Reference URLs (2026-06-06)
+
+### Codex CLI
+
+| Item | URL |
+|---|---|
+| OpenAI Codex CLI Help Center | https://help.openai.com/en/collections/13193998-codex-cli |
+| OpenAI Codex CLI Getting Started | https://help.openai.com/en/articles/11096431 |
+| OpenAI Codex GitHub | https://github.com/openai/codex |
+| Codex Slash Commands | https://github.com/openai/codex/blob/main/docs/slash_commands.md |
+| Codex Config | https://github.com/openai/codex/blob/main/docs/config.md |
+| Codex Changelog | https://developers.openai.com/codex/changelog/ |
+| Codex `/status` related issue | https://github.com/openai/codex/issues/10233 |
+
+### Misskey
+
+| Item | URL |
+|---|---|
+| MisskeyHub | https://misskey-hub.net/ |
+| MisskeyHub Docker install guide | https://misskey-hub.net/docs/for-admin/install/guides/docker/ |
+| misskey-dev/misskey | https://github.com/misskey-dev/misskey |
+| Misskey repository README | https://github.com/misskey-dev/misskey/blob/master/README.md |
+| Misskey compose example | https://github.com/misskey-dev/misskey/blob/master/compose_example.yml |
+| Misskey Dockerfile | https://github.com/misskey-dev/misskey/blob/master/Dockerfile |
+
+### Docker / Compose
+
+| Item | URL |
+|---|---|
+| Docker Docs | https://docs.docker.com/ |
+| Docker Desktop WSL | https://docs.docker.com/desktop/features/wsl/ |
+| Docker Compose | https://docs.docker.com/compose/ |
+| Compose file reference | https://docs.docker.com/reference/compose-file/ |
+| Dockerfile reference | https://docs.docker.com/reference/dockerfile/ |
+| BuildKit | https://docs.docker.com/build/buildkit/ |
+| Docker Hub Node image | https://hub.docker.com/_/node |
+| Docker Hub PostgreSQL image | https://hub.docker.com/_/postgres |
+| Docker Hub Redis image | https://hub.docker.com/_/redis |
+| Docker Hub Meilisearch image | https://hub.docker.com/r/getmeili/meilisearch |
+
+### Runtime / Services From Misskey Compose And Dockerfile
+
+| Item | URL |
+|---|---|
+| Node.js docs | https://nodejs.org/docs/latest/api/ |
+| pnpm docs | https://pnpm.io/ |
+| PostgreSQL docs | https://www.postgresql.org/docs/ |
+| Redis docs | https://redis.io/docs/latest/ |
+| Meilisearch docs | https://www.meilisearch.com/docs/ |
+| Meilisearch Docker install | https://www.meilisearch.com/docs/learn/self_hosted/install_meilisearch_with_docker |
+| mCaptcha GitHub | https://github.com/mCaptcha/mCaptcha |
+| Tini GitHub | https://github.com/krallin/tini |
+| FFmpeg documentation | https://ffmpeg.org/documentation.html |
+| jemalloc | https://jemalloc.net/ |
+| Debian documentation | https://www.debian.org/doc/ |
