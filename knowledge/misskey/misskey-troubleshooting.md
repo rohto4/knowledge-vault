@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Misskey troubleshooting"
 type: knowledge
 status: active
@@ -35,4 +35,44 @@ ls -ld files
 sudo chown -R 991:991 files
 sudo chmod -R u+rwX,g+rwX files
 docker compose restart web
+```
+## 2026-06-06: Image Upload INTERNAL_ERROR / EACCES
+
+Symptom:
+
+- Profile icon upload and note image attachment failed with `INTERNAL_ERROR`.
+- Error ID shown in UI: `5d37dbcb-891e-41ca-a3d6-e690c97775ac`.
+
+Server log:
+
+```text
+Error: EACCES: permission denied, copyfile '/tmp/tmp-*' -> '/misskey/files/<uuid>'
+```
+
+Cause:
+
+- `compose.yml` mounts `./files:/misskey/files`.
+- Host directory `/home/unibell4/src/misskey/files` was owned by `root:root` with mode `755`.
+- Container user `misskey` cannot write there.
+
+Fix applied:
+
+```bash
+cd /home/unibell4/src/misskey
+docker compose exec -T -u root web chown -R 991:991 /misskey/files
+docker compose exec -T -u root web chmod -R u+rwX,g+rwX /misskey/files
+```
+
+Verification:
+
+```bash
+docker compose exec -T -u 991 web touch /misskey/files/.write-test
+docker compose exec -T -u 991 web rm -f /misskey/files/.write-test
+ls -ld files
+```
+
+Expected `ls -ld files` after fix:
+
+```text
+drwxrwxr-x 2 991 ... files
 ```

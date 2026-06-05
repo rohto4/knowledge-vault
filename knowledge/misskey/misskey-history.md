@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Misskey history"
 type: knowledge
 status: active
@@ -25,4 +25,4 @@ tags: [misskey, history]
 - `G:\knowledge-vault` のクラウドバックアップ候補を `misskey-plan/docs/candi-ref/knowledge-vault-backup-options.md` に整理。
 - G:\knowledge-vault を GitHub repository https://github.com/rohto4/knowledge-vault に push。
 - ttachments/, SQLite, Obsidian workspace/cache, plugin payload, 大容量バイナリを .gitignore で除外。
-
+- 画像アップロードの INTERNAL_ERROR は /misskey/files の EACCES と判明。/home/unibell4/src/misskey/files をコンテナ内 root 経由で 991:991 に修正し、書き込みテストに成功。
