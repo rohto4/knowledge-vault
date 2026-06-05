@@ -23,5 +23,6 @@ tags: [misskey, history]
 - Obsidian vault には細かい個別ノートではなく、系統別台帳と時系列ヒストリーを置く方針を承認。
 - `G:\devwork\misskey-plan` を GitHub repository `https://github.com/rohto4/misskey-plan` に push。
 - `G:\knowledge-vault` のクラウドバックアップ候補を `misskey-plan/docs/candi-ref/knowledge-vault-backup-options.md` に整理。
-
+- G:\knowledge-vault を GitHub repository https://github.com/rohto4/knowledge-vault に push。
+- ttachments/, SQLite, Obsidian workspace/cache, plugin payload, 大容量バイナリを .gitignore で除外。
 

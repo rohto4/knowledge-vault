@@ -16,3 +16,5 @@ Misskey 改修は WSL 側をソース正本にする。予定構成は `/home/un
 
 GitHub planning repo: https://github.com/rohto4/misskey-plan
 
+Knowledge vault GitHub repo: https://github.com/rohto4/knowledge-vault.git。Git管理対象はMarkdown/設定/軽量スクリプト中心で、attachments、SQLite、Obsidian workspace/cache、plugin payload、大容量バイナリは除外。
+
