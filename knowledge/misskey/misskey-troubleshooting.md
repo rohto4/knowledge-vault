@@ -76,3 +76,21 @@ Expected `ls -ld files` after fix:
 ```text
 drwxrwxr-x 2 991 ... files
 ```
+
+Operational retry routine:
+
+```bash
+cd /home/unibell4/src/misskey
+docker compose restart web
+docker compose ps
+docker compose exec -T -u 991 web touch /misskey/files/.write-test
+docker compose exec -T -u 991 web rm -f /misskey/files/.write-test
+docker compose logs --tail=80 web
+```
+
+If the UI still shows an upload error after retry:
+
+```bash
+cd /home/unibell4/src/misskey
+docker compose logs --tail=120 web
+```
